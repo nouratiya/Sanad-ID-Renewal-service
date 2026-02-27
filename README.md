@@ -14,17 +14,17 @@ This project implements a relational database system for the SANAD Personal Iden
 
 1. Citizen Management: Register, update, and track personal information.
    
-2.Service Requests: Submit, monitor, and manage personal ID renewal requests.
+2. Service Requests: Submit, monitor, and manage personal ID renewal requests.
 
-3.Payment Handling: Process payments, track status, and link payments to requests.
+3. Payment Handling: Process payments, track status, and link payments to requests.
 
-4.Employee Roles: Authorized employees review requests and update statuses.
+4. Employee Roles: Authorized employees review requests and update statuses.
 
-5.Admin & Auditor Access: Admins manage all system functions; auditors view requests for compliance.
+5. Admin & Auditor Access: Admins manage all system functions; auditors view requests for compliance.
 
-6.Reports & Views: Generate overviews of requests, payments, and user activity.
+6. Reports & Views: Generate overviews of requests, payments, and user activity.
 
-7.Security & Validation: Role-based access, data validation, and input/output checks.
+7. Security & Validation: Role-based access, data validation, and input/output checks.
 
 # Database Design :-
 Core Entities (Entity	Description)
@@ -34,23 +34,23 @@ Core Entities (Entity	Description)
   
 3. Employee	Stores employee details and roles
 
-4.EmployeePhone	Handles multiple phone numbers per employee
+4. EmployeePhone	Handles multiple phone numbers per employee
 
-5.ServiceRequest	Tracks service requests, progress, and assigned employee
+5. ServiceRequest	Tracks service requests, progress, and assigned employee
 
-6.Payment	Stores payment records linked to service requests
+6. Payment	Stores payment records linked to service requests
 
 # Relationships :-
 
-1.Citizen → ServiceRequest (1:M)
+1. Citizen → ServiceRequest (1:M)
 
-2.Employee → ServiceRequest (1:M)
+2. Employee → ServiceRequest (1:M)
 
-3.ServiceRequest → Payment (1:M)
+3. ServiceRequest → Payment (1:M)
 
-4.Citizen → CitizenPhone (1:M)
+4. Citizen → CitizenPhone (1:M)
 
-5.Employee → EmployeePhone (1:M)
+5. Employee → EmployeePhone (1:M)
 
 - The database is normalized up to 3NF to minimize redundancy and ensure data consistency.
 
@@ -74,8 +74,8 @@ Core Entities (Entity	Description)
 
 
 
-Access the System
+# Access the System :-
 
-Open locally via browser: http://localhost/sanad/
+- Open locally via browser: http://localhost/sanad/
 
-Use provided admin or employee credentials to explore functionality
+- Use provided admin or employee credentials to explore functionality
